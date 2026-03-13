@@ -1,4 +1,5 @@
 :root {
+codex/create-local-storage-management-system-sv1dno
   color-scheme: dark;
   --bg: #111111;
   --surface: #1a1a1a;
@@ -9,6 +10,15 @@
   --accent-soft: #ff9a3d;
   --border: #2f2f2f;
   --danger: #ff4f4f;
+=======
+  color-scheme: light;
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --primary: #1f6feb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #d1d5db;
+main
 }
 
 * {
@@ -17,6 +27,7 @@
 
 body {
   margin: 0;
+codex/create-local-storage-management-system-sv1dno
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text);
   background: radial-gradient(circle at top, #1d1d1d 0%, var(--bg) 35%);
@@ -99,6 +110,49 @@ h2 {
   margin: 0 0 1rem;
   color: var(--accent-soft);
   font-size: 1.25rem;
+=======
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+header {
+  background: var(--card);
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  margin: 0 0 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tab-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+ main
 }
 
 .tab-content {
@@ -112,6 +166,7 @@ h2 {
 .grid {
   display: grid;
   gap: 1rem;
+codex/create-local-storage-management-system-sv1dno
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   align-items: start;
 }
@@ -129,11 +184,26 @@ h2 {
   margin: 0 0 0.8rem;
   font-size: 1rem;
   color: #ffd8b0;
+=======
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+main
 }
 
 form {
   display: flex;
   flex-direction: column;
+ codex/create-local-storage-management-system-sv1dno
   gap: 0.55rem;
 }
 
@@ -182,6 +252,32 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+=======
+  gap: 0.5rem;
+}
+
+input,
+select,
+button {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1rem;
+  color: var(--muted);
+main
 }
 
 .table-card {
@@ -191,6 +287,7 @@ ul {
 table {
   width: 100%;
   border-collapse: collapse;
+ codex/create-local-storage-management-system-sv1dno
   overflow: hidden;
   border-radius: 10px;
 }
@@ -198,23 +295,30 @@ table {
 thead {
   background: #2a2a2a;
   border-bottom: 2px solid var(--accent);
+=======
+ main
 }
 
 th,
 td {
   text-align: left;
   border-bottom: 1px solid var(--border);
+ codex/create-local-storage-management-system-sv1dno
   padding: 0.7rem;
 }
 
 tbody tr:hover {
   background: #262626;
+=======
+  padding: 0.6rem;
+ main
 }
 
 .empty {
   color: var(--muted);
   font-style: italic;
 }
+codex/create-local-storage-management-system-sv1dno
 
 @media (max-width: 700px) {
   .tab-btn {
@@ -226,3 +330,5 @@ tbody tr:hover {
     padding: 1rem;
   }
 }
+=======
+ main

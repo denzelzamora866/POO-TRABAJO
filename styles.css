@@ -125,10 +125,6 @@ select {
   border: 1px solid var(--border);
   padding: 0.65rem 0.75rem;
   font-size: 0.95rem;
-}
-
-input,
-select {
   background: #121212;
   color: var(--text);
 }

@@ -57,6 +57,7 @@ nav {
   color: var(--text);
   cursor: pointer;
   font-weight: 700;
+  line-height: 1.1;
   transition: all 0.2s ease;
 }
 
@@ -119,8 +120,7 @@ form {
 }
 
 input,
-select,
-button {
+select {
   border-radius: 10px;
   border: 1px solid var(--border);
   padding: 0.65rem 0.75rem;
@@ -148,6 +148,9 @@ form button {
   background: linear-gradient(180deg, #ff8a1f 0%, var(--accent) 100%);
   color: #111;
   border: 0;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.95rem;
   font-weight: 800;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.2s ease;

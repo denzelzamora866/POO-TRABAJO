@@ -9,13 +9,14 @@
 <body>
   <header>
     <h1>Sistema Escolar</h1>
+    <p class="subtitle">Panel de gestión académica · Modo local con almacenamiento en el navegador</p>
     <nav>
       <button id="btnConfig" class="tab-btn active">Configuración</button>
       <button id="btnPrincipal" class="tab-btn">Principal</button>
     </nav>
   </header>
 
-  <main>
+  <main class="app-shell">
     <section id="configSection" class="tab-content active">
       <h2>Registro de datos base</h2>
 
@@ -111,6 +112,10 @@
       </article>
     </section>
   </main>
+
+  <footer class="app-footer">
+    <small>Los datos se guardan en tu navegador (localStorage).</small>
+  </footer>
 
   <script src="script.js"></script>
 </body>
